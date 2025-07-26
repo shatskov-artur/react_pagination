@@ -52,9 +52,13 @@ export const Pagination: React.FC<Props> = ({
             <li
               className={`page-item ${currentPage === num ? 'active' : ''}`}
               key={num}
-              onClick={() => onPageChange(num)}
             >
-              <a data-cy="pageLink" className="page-link" href={`#${num}`}>
+              <a
+                data-cy="pageLink"
+                className="page-link"
+                href={`#${num}`}
+                onClick={() => onPageChange(num)}
+              >
                 {num}
               </a>
             </li>

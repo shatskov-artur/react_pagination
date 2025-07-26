@@ -33,7 +33,7 @@ export const App: React.FC = () => {
               setPerPage(+event.target.value);
               setCurrentPage(1);
             }}
-            defaultValue={perPage}
+            value={perPage}
           >
             <option value="3">3</option>
             <option value="5">5</option>
